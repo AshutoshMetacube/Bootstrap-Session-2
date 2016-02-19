@@ -1,0 +1,130 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Bootstrap Button</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="JS/jquery-1.11.1.min.js"></script>
+    <script src="BootStrap/js/bootstrap.min.js"></script>
+    <link href="BootStrap/css/bootstrap.min.css" rel="stylesheet" />
+
+</head>
+<body>
+    <div class="text-center">
+        <h1 class="hidden-xs">Sample form</h1>
+        <img src="Images/movie.png" class="img-responsive visible-xs img-rounded" width="80" height="80"/>
+    </div>
+    <div class="well">
+        <form id="movieForm" method="post">
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-lg-1 col-md-2 col-sm-4 col-xs-12">
+                        <label class="control-label">Movie title</label>
+                    </div>
+                    <div class="col-lg-5 col-md-4 col-sm-8 col-xs-12">
+                        <input type="text" class="form-control" name="title"/>
+                    </div>
+                    <div class="col-lg-1 col-md-2 col-sm-4 col-xs-12">
+                        <label class="control-label">Genre</label>
+                    </div>
+                    <div class="col-lg-5 col-md-4 col-sm-8 col-xs-12">
+                        <select class="form-control" name="genre">
+                            <option value="">Choose a genre</option>
+                            <option value="action">Action</option>
+                            <option value="comedy">Comedy</option>
+                            <option value="horror">Horror</option>
+                            <option value="romance">Romance</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-lg-1 col-md-2 col-sm-4 col-xs-12">
+                        <label class="control-label">Director</label>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-8 col-xs-12">
+                        <input type="text" class="form-control" name="director" />
+                    </div>
+
+                    <div class="col-lg-1 col-md-2 col-sm-4 col-xs-12">
+                        <label class="control-label">Writer</label>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-8 col-xs-12">
+                        <input type="text" class="form-control" name="writer" />
+                    </div>
+
+                    <div class="col-lg-1 col-md-2 col-sm-4 col-xs-12">
+                        <label class="control-label">Producer</label>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-8 col-xs-12">
+                        <input type="text" class="form-control" name="producer" />
+                    </div>
+
+                    <div class="col-lg-1 col-md-2 col-sm-4 col-xs-12">
+                        <label class="control-label">Composer</label>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-8 col-xs-12">
+                        <input type="text" class="form-control" name="Composer" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-lg-1 col-md-2 col-sm-4 col-xs-12">
+                        <label class="control-label">Website</label>
+                    </div>
+                    <div class="col-lg-5 col-md-4 col-sm-8 col-xs-12">
+                        <input type="text" class="form-control" name="website" />
+                    </div>
+
+                    <div class="col-lg-1 col-md-2 col-sm-4 col-xs-12">
+                        <label class="control-label">Youtube trailer</label>
+                    </div>
+                    <div class="col-lg-5 col-md-4 col-sm-8 col-xs-12">
+                        <input type="text" class="form-control" name="trailer" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label">Review</label>
+                <textarea class="form-control" name="review" rows="8"></textarea>
+            </div>
+
+            <div class="form-group">
+                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                    <label class="control-label">Rating</label>
+                </div>
+
+                <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+                    <label class="radio-inline text-danger">
+                        <input type="radio" name="rating" value="terrible" />
+                        Terrible
+                    </label>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+                    <label class="radio-inline text-info">
+                        <input type="radio" name="rating" value="watchable" />
+                        Watchable
+                    </label>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+                    <label class="radio-inline text-success">
+                        <input type="radio" name="rating" value="best" />
+                        Best ever
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <button type="button" class="btn btn-default">Cancel</button>
+                <button type="button" class="btn btn-primary">Validate</button>
+                <button type="button" class="btn btn-success">Submit</button>
+                <button type="button" class="btn btn-danger">Delete</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
